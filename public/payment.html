@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/payment.css">
+</head>
+<!--NAVBAR-->
+<div style="background-color:  #f1f3ff;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f1f3ff; font-family: Helvetica, sans-serif; font-size: 14px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" style=" color: #102ca4; font-size: 14px;" href="index.html">
+        <h2><b>SIPETRA</b></h2>
+      </a>
+      <button href="index.html" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" style="margin-right: 20px; font-size: 14px;">
+            <a class="nav-link active" aria-current="page" style="color: black;" href="index.html">Layanan Kami</a>
+          </li>
+          <li class="nav-item" style="margin-right: 20px; font-size: 14px;">
+            <a class="nav-link" style="color: black;" href="index.html">Kenapa Kami</a>
+          </li>
+          <li class="nav-item" style="margin-right: 20px; font-size: 14px;">
+            <a class="nav-link" style="color: black;" href="index.html">Testimoni</a>
+          </li>
+          <li class="nav-item" style="margin-right: 20px; font-size: 14px;">
+            <a class="nav-link" style="color: black;" href="index.html">Pertanyaan yang Sering Diajukan</a>
+          </li>
+        </ul>
+        <a href="register.html">
+          <button class="btn" type="button" style="background-color: #262626; color: #f1f3ff; font-size: 14px;  padding: 5px 10px; border-radius: 5px;"><b>Register</b></button>
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+    <div style="background-color: #f1f3ff;">
+        <div class="container-fluid" style="margin-top: 20px;  background-color:  #f1f3ff;">
+          <div class="row align-items-center margin-right: 20;">
+            <div class="col col-sm-6">
+              <h1 style="font-size: 36px; line-height: 54px; font-family: Helvetica, Arial, sans-serif;"><b>Sewa & Rental Mobil Terbaik di kawasan Bandar Lampung</b></h1>
+              <p style="font-size: 14px; line-height: 20px; margin-top: 20px; margin-right: 185px;">Selamat datang di Sipetra Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+              <a href="car.html">
+                <button class="btn" type="button" style="background-color: #102ca4; color: #f1f3ff; font-size: 14px;  padding: 5px 10px; border-radius: 5px;"><b>Kembali ke daftar mobil</b></button>
+              </a>
+              </div>
+            <div class="col-sm-6">
+              <img src="images/assets/img_car.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h2><b>Ringkasan Sewa</b></h2>
+  <div class="car-details">
+    <p>Nama Mobil: <span id="car-name">-</span></p>
+    <p>Harga: <span id="car-price">-</span></p>
+    <p>Spesifikasi: <span id="car-specs">-</span></p>
+    <p>Tersedia di: <span id="car-available">-</span></p>
+  </div>
+    </div>
+    <!-- Informasi Pembayaran -->
+    <div class="box">
+        <h2><b>Informasi Pembayaran</b></h2>
+        <p>Masukkan Informasi Pembayaran</p>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" placeholder="Nama anda">
+            </div>
+            <div class="form-group">
+                <label for="telepon">Nomor Telepon</label>
+                <input type="tel" id="telepon" placeholder="Nomor telepon">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" placeholder="Alamat">
+            </div>
+            <div class="form-group">
+                <label for="kota">Kab / Kota</label>
+                <input type="text" id="kota" placeholder="Kabupaten atau kota">
+            </div>
+        </div>
+    </div>
+
+    <!-- Rental Info -->
+    <div class="box">
+        <h2><b>Rental Info</b></h2>
+        <p>Please select your rental date</p>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="pickup-lokasi">Pick-Up</label>
+                <select id="pickup-lokasi">
+                  <option value="Bandar Lampung">Bandar Lampung</option>
+                  <option value="Metro">Metro</option>
+                  <option value="Pringsewu">Pringsewu</option>
+                  <option value="Lampung Tengah">Lampung Tengah</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pickup-tanggal">Tanggal</label>
+                <input type="date" id="pickup-tanggal">
+            </div>
+            <div class="form-group">
+                <label for="pickup-waktu">Waktu</label>
+                <input type="time" id="pickup-waktu">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="dropoff-lokasi">Drop-Off</label>
+                <select id="dropoff-lokasi">
+                  <option value="Bandar Lampung">Bandar Lampung</option>
+                  <option value="Metro">Metro</option>
+                  <option value="Pringsewu">Pringsewu</option>
+                  <option value="Lampung Tengah">Lampung Tengah</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dropoff-tanggal">Tanggal</label>
+                <input type="date" id="dropoff-tanggal">
+            </div>
+            <div class="form-group">
+                <label for="dropoff-waktu">Waktu</label>
+                <input type="time" id="dropoff-waktu">
+            </div>
+        </div>
+    </div>
+
+    <!-- Metode Pembayaran -->
+    <div class="box">
+        <h2><b>Metode Pembayaran</b></h2>
+        <p>Masukkan metode pembayaran</p>
+        <div class="form-row">
+            <!-- Kartu Kredit -->
+            <div class="payment-method">
+                <input type="radio" id="credit" name="payment" checked>
+                <label for="credit">
+                    <img src="visa.png" alt="Visa Logo" class="payment-logo"> Kartu Kredit
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Card number">
+                <input type="text" placeholder="DD/MM/YY">
+                <input type="text" placeholder="Cardholder">
+                <input type="text" placeholder="CVC">
+            </div>
+        </div>
+        <div class="form-row">
+            <!-- PayPal -->
+            <div class="payment-method">
+                <input type="radio" id="paypal" name="payment">
+                <label for="paypal">
+                    <img src="paypal.png" alt="PayPal Logo" class="payment-logo"> PayPal
+                </label>
+                <br>
+                <br>
+              </div>    
+            </div>
+            <!-- Total Harga -->
+             <div id="total-price-container" class="form-row">
+               <h4>Total Harga: <span id="total-price">-</span></h3>
+              </div>
+              <!-- Tombol Bayar -->
+               <div class="form-row submit-row">
+                 <button id="confirm-payment" class="submit-button">Bayar</button>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 50px;">
+<div class="row">
+  <div class="col">
+    <p style="font-size: 14px; font-family: Helvetica, sans-serif; width: 80%; line-height: 25px;">Gang Angkola, Kampung Baru, Labuhan Ratu, Bandar Lampung  672000<br>
+    sipetracarrental@gmail.com<br>
+    081-233-334-808</p>
+  </div>
+  <div class="col-sm-2">
+    <a href="#service"><p style="font-size: 14px; font-family: Helvetica, sans-serif; width: 80%; line-height: 25px; color: black;">Layanan Kami</p></a>
+    <a href="#whyus"><p style="font-size: 14px; font-family: Helvetica, sans-serif; width: 80%; line-height: 25px; color: black">Mengapa Kami</p></a>
+    <a href="#Testimonial"><p style="font-size: 14px; font-family: Helvetica, sans-serif; width: 80%; line-height: 25px; color: black">Testimoni</p></a>
+    <a href="#faq"><p style="font-size: 14px; font-family: Helvetica, sans-serif; width: 80%; line-height: 25px; color: black">Pertanyaan yang Sering Diajukan</p></a>
+  </div>
+  <div class="col-sm-4" style="margin-bottom: 20px;">
+    <p style="font-size: 14px; font-family: Helvetica, sans-serif; line-height: 25px; text-align: start;">Media Sosial</p>
+    <div class="row" style="width: fit-content;">
+      <div class="col">
+        <a href="https://www.facebook.com/share/zXC3Qn8uvoEFQCt8/?mibextid=qi2Omg"><img src="images/assets/icon_facebook.png" alt=""></a>
+      </div>
+      <div class="col">
+        <a href="https://www.instagram.com/academysipetra/"><img src="images/assets/icon_instagram.png" alt=""></a>
+      </div>
+      <div class="col">
+        <a href="https://x.com/academysipetra?t=BGSes7Sl2YiV1YZrsrUAEw&s=08"><img src="images/assets/icon_twitter.png" alt=""></a>
+      </div>
+      <div class="col">
+        <a href="#"><img src="images/assets/icon_mail.png" alt=""></a>
+      </div>
+      <div class="col">
+        <a href="#"><img src="images/assets/icon_twitch.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <p style="font-size: 14px; font-family: Helvetica, sans-serif; line-height: 25px;">Sistem Penyewaan Transportasi</p>
+    <a style="color: #102ca4; font-size: 14px;" href="#"> <h3><b>SIPETRA</b></h3></a>
+  </div>
+</div>
+
+  <script>
+    // Ambil data dari localStorage
+    const selectedCar = JSON.parse(localStorage.getItem('selectedCar'));
+
+    // Cek apakah ada data mobil yang disimpan
+    if (selectedCar) {
+      // Tampilkan data di elemen HTML
+      document.getElementById('car-name').textContent = selectedCar.name;
+      document.getElementById('car-price').textContent = `Rp ${selectedCar.price}`;
+      document.getElementById('car-specs').textContent = selectedCar.specs;
+      document.getElementById('car-available').textContent = selectedCar.availableAt;
+    } else {
+      alert('Tidak ada mobil yang dipilih!');
+    }
+
+    // Tambahkan logika untuk tombol konfirmasi pembayaran
+    document.getElementById('confirm-payment').addEventListener('click', function () {
+      alert('Pembayaran berhasil dikonfirmasi!');
+      localStorage.removeItem('selectedCar'); // Hapus data setelah pembayaran
+    });
+
+    function calculateTotalPrice() {
+  const pickupDate = document.getElementById('pickup-tanggal').value;
+  const dropoffDate = document.getElementById('dropoff-tanggal').value;
+  const pricePerDay = selectedCar.price;
+
+  if (pickupDate && dropoffDate) {
+    const startDate = new Date(pickupDate);
+    const endDate = new Date(dropoffDate);
+    
+    // Hitung jumlah hari
+    const timeDifference = endDate - startDate;
+    const dayDifference = timeDifference / (1000 * 3600 * 24);
+    
+    // Pastikan jumlah hari tidak negatif
+    if (dayDifference >= 0) {
+      const totalPrice = pricePerDay * dayDifference;
+      document.getElementById('total-price').textContent = `Rp ${totalPrice.toLocaleString()}`;
+    } else {
+      document.getElementById('total-price').textContent = '-';
+    }
+  } else {
+    document.getElementById('total-price').textContent = '-';
+  }
+}
+
+// Tambahkan event listener untuk menghitung total harga saat tanggal berubah
+document.getElementById('pickup-tanggal').addEventListener('change', calculateTotalPrice);
+document.getElementById('dropoff-tanggal').addEventListener('change', calculateTotalPrice);
+  </script>
+</body>
+</html>

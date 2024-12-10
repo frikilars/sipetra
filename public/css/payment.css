@@ -1,0 +1,124 @@
+/* payment.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-logo {
+    width: 60px; /* Ubah ukuran lebar logo di sini */
+    height: auto; /* Atur tinggi secara otomatis agar proporsional */
+    vertical-align: middle; /* Pastikan logo sejajar secara vertikal dengan teks */
+}
+/* Container untuk tombol submit agar terpisah dengan form lainnya */
+.submit-row {
+    display: flex;
+    justify-content: flex-end; /* Membuat tombol berada di sebelah kanan */
+    width: 100%; /* Pastikan mengisi seluruh lebar */
+    margin-top: 20px; /* Memberikan jarak dari elemen sebelumnya */
+}
+
+.submit-button {
+    background-color: #102ca4; /* Warna biru */
+    color: #fff; /* Warna teks putih */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+.submit-button:active {
+    background-color: #003f7f; /* Warna biru lebih gelap saat ditekan */
+}
+
+/* CSS untuk Logo Sipetra */
+.logo-sipetra {
+    text-align: center; /* Menyelaraskan teks di tengah */
+    margin-bottom: 30px; /* Jarak dari bagian bawah logo */
+}
+
+.logo-sipetra h1 {
+    font-size: 40px;
+    color: #007bff; /* Warna biru */
+    font-weight: bold;
+    text-transform: uppercase; /* Membuat teks lebih tegas */
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
